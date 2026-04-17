@@ -1,0 +1,13 @@
+add_newline = false
+
+[python]
+symbol = "🐍 "
+
+[docker_context]
+symbol = "🐳 "
+
+[kubernetes]
+symbol = "☸ "
+
+[terraform]
+symbol = "🌍 "
