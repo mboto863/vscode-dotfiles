@@ -1,0 +1,26 @@
+{
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "files.trimTrailingWhitespace": true,
+    "python.defaultInterpreterPath": "/usr/bin/python3",
+    "python.formatting.provider": "black",
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "[sql]": {
+        "editor.defaultFormatter": "mtxr.sqltools"
+    },
+    "[terraform]": {
+        "editor.defaultFormatter": "hashicorp.terraform"
+    },
+    "terraform.format.enable": true,
+    "yaml.validate": true,
+    "remote.SSH.defaultExtensions": [
+        "ms-python.python",
+        "ms-azuretools.vscode-docker",
+        "hashicorp.terraform"
+    ]
+}
