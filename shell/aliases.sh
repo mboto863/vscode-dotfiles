@@ -1,0 +1,6 @@
+alias tf="terraform"
+alias k="kubectl"
+alias d="docker"
+alias dc="docker compose"
+alias gs="git status"
+alias gl="git log --oneline --graph --decorate"
