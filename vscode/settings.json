@@ -1,12 +1,64 @@
 {
+    // ===================================================
+    // CORE EDITOR BEHAVIOR
+    // ===================================================
     "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
     "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "editor.rulers": [80, 120],
+    "editor.minimap.enabled": false,
+    "editor.smoothScrolling": true,
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+        "source.organizeImports": true
+    },
+
+    // ===================================
+    // FILES
+    // ===================================
     "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewLine": true,
+    "files.autoSave": "onFocusChange",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_STORE": true,
+        "**/__py_cache__": true,
+        "**/.pytest_cache": true,
+        "**/.mypy_cache": true,
+        "**/.venv": true,
+        "**/node_modules": true,
+        "**/.terraform": true
+    },
+
+    // ==================================================
+    // SEARCH
+    // ==================================================
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/.terraform": true,
+        "**/.venv": true,
+        "**/dist": true
+    },
+
+    // =================================================
+    // THEME & UI
+    // =================================================
+    "workbench.colorTheme": "Catppucin Mocha",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.startupEditor": "none",
+    "workbench.editor.labelFormat": "short",
+    "workbench.tree.indent": 16,
+
+    "window.menuBarVisibility": "toggle",
+    "window.zoomLevel": 0,
+
     "python.defaultInterpreterPath": "/usr/bin/python3",
     "python.formatting.provider": "black",
-    "editor.codeActionsOnSave": {
-        "source.fixAll": true
-    },
+    
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter"
     },

@@ -27,7 +27,12 @@ if command -v code >/dev/null; then
 fi
 
 # Symlinks
-ln -sf ~/vscode-dotfiles/git/.gitconfig ~/.gitconfig
+
+# ----------------------------------------------------
+# Only if personal setup.
+# ln -sf ~/vscode-dotfiles/git/.gitconfig ~/.gitconfig
+# ----------------------------------------------------
+
 ln -sf ~/vscode-dotfiles/shell/.zshrc ~/.zshrc
 ln -sf ~/vscode-dotfiles/vscode/settings.json \
     ~/.config/Code/User/settings.json
@@ -35,4 +40,4 @@ ln -sf ~/vscode-dotfiles/vscode/keybindings.json \
     ~/.config/Code/User/keybindings.json
 
 mkdir -p ~/.config
-ln -sf ~/vscode-dotfiles/config/starship.toml ~/.config/startship.toml
+ln -sf ~/vscode-dotfiles/config/starship.toml ~/.config/starship.toml

@@ -7,14 +7,11 @@ jq
 ripgrep
 fd-find
 make
-automate
 gcc
 gcc-c++
 kernel-devel
 
 python3
 python3-pip
-python3-venv
 
 moby-engine
-docker-compose-plugin
