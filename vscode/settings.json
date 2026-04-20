@@ -1,78 +1,97 @@
 {
-    // ===================================================
-    // CORE EDITOR BEHAVIOR
-    // ===================================================
-    "editor.formatOnSave": true,
-    "editor.formatOnPaste": true,
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true,
-    "editor.detectIndentation": false,
-    "editor.rulers": [80, 120],
-    "editor.minimap.enabled": false,
-    "editor.smoothScrolling": true,
-    "editor.cursorBlinking": "smooth",
-    "editor.cursorSmoothCaretAnimation": "on",
-    "editor.codeActionsOnSave": {
-        "source.fixAll": true,
-        "source.organizeImports": true
-    },
-
-    // ===================================
-    // FILES
-    // ===================================
-    "files.trimTrailingWhitespace": true,
-    "files.insertFinalNewLine": true,
-    "files.autoSave": "onFocusChange",
-    "files.exclude": {
-        "**/.git": true,
-        "**/.DS_STORE": true,
-        "**/__py_cache__": true,
-        "**/.pytest_cache": true,
-        "**/.mypy_cache": true,
-        "**/.venv": true,
-        "**/node_modules": true,
-        "**/.terraform": true
-    },
-
-    // ==================================================
-    // SEARCH
-    // ==================================================
-    "search.exclude": {
-        "**/node_modules": true,
-        "**/.terraform": true,
-        "**/.venv": true,
-        "**/dist": true
-    },
-
-    // =================================================
-    // THEME & UI
-    // =================================================
-    "workbench.colorTheme": "Catppucin Mocha",
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.startupEditor": "none",
-    "workbench.editor.labelFormat": "short",
-    "workbench.tree.indent": 16,
-
-    "window.menuBarVisibility": "toggle",
-    "window.zoomLevel": 0,
-
-    "python.defaultInterpreterPath": "/usr/bin/python3",
-    "python.formatting.provider": "black",
-    
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter"
-    },
-    "[sql]": {
-        "editor.defaultFormatter": "mtxr.sqltools"
-    },
-    "[terraform]": {
-        "editor.defaultFormatter": "hashicorp.terraform"
-    },
-    "terraform.format.enable": true,
-    "yaml.validate": true,
-    "remote.SSH.defaultExtensions": [
-        "ms-python.python",
-        "ms-azuretools.vscode-docker",
-        "hashicorp.terraform"
-    ]
+  // ===================================================
+  // CORE EDITOR BEHAVIOR
+  // ===================================================
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.rulers": [
+    80,
+    120
+  ],
+  "editor.minimap.enabled": false,
+  "editor.smoothScrolling": true,
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  // ===================================
+  // FILES
+  // ===================================
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewLine": true,
+  "files.autoSave": "onFocusChange",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_STORE": true,
+    "**/__py_cache__": true,
+    "**/.pytest_cache": true,
+    "**/.mypy_cache": true,
+    "**/.venv": true,
+    "**/node_modules": true,
+    "**/.terraform": true
+  },
+  // ==================================================
+  // SEARCH
+  // ==================================================
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/.terraform": true,
+    "**/.venv": true,
+    "**/dist": true
+  },
+  // =================================================
+  // THEME & UI
+  // =================================================
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "none",
+  "workbench.editor.labelFormat": "short",
+  "workbench.tree.indent": 16,
+  "workbench.sideBar.location": "right",
+  "workbench.navigationControl.enabled": false,
+  "window.menuBarVisibility": "toggle",
+  "window.zoomLevel": 0,
+  "python.defaultInterpreterPath": "/usr/bin/python3",
+  "python.formatting.provider": "black",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "[sql]": {
+    "editor.defaultFormatter": "mtxr.sqltools"
+  },
+  "[terraform]": {
+    "editor.defaultFormatter": "hashicorp.terraform"
+  },
+  "terraform.format.enable": true,
+  "yaml.validate": true,
+  "remote.SSH.defaultExtensions": [
+    "ms-python.python",
+    "ms-azuretools.vscode-docker",
+    "hashicorp.terraform"
+  ],
+  "editor.cursorStyle": "block",
+  // Custom UI tweaks
+  "workbench.colorCustomizations": {
+    "editor.background": "#1e1e2e",
+    "sideBar.background": "#181825",
+    "activityBar.background": "#11111b",
+    "statusBar.background": "#11111b",
+    "statusBar.noFolderBackground": "#11111b"
+  },
+  // ==============================
+  // FONT / TERMINAL
+  // ==============================
+  "editor.fontFamily": "'JetBrainsMono Nerd Font', 'Fira Code', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 13,
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.scrollBack": 10000,
+  // MISCELLANOUS
+  "chat.disableAIFeatures": true
 }

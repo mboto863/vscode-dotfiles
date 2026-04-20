@@ -34,10 +34,10 @@ fi
 # ----------------------------------------------------
 
 ln -sf ~/vscode-dotfiles/shell/.zshrc ~/.zshrc
-ln -sf ~/vscode-dotfiles/vscode/settings.json \
-    ~/.config/Code/User/settings.json
-ln -sf ~/vscode-dotfiles/vscode/keybindings.json \
-    ~/.config/Code/User/keybindings.json
 
 mkdir -p ~/.config
 ln -sf ~/vscode-dotfiles/config/starship.toml ~/.config/starship.toml
+
+ln -sf ~/vscode-dotfiles/vscode/settings.json \
+  ~/.config/Code/User/settings.json
+
