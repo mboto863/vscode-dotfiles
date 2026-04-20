@@ -21,6 +21,9 @@ install_packages() {
 
 install_packages
 
+# Install starship with curl
+sudo curl -sS https://starship.rs/install.sh | sh
+
 # VS Code extensions
 if command -v code >/dev/null; then
   xargs -L 1 code --install-extension < vscode/extensions.txt
