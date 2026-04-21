@@ -24,7 +24,7 @@
   // ===================================
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewLine": true,
-  "files.autoSave": "onFocusChange",
+  "files.autoSave": "afterDelay",
   "files.exclude": {
     "**/.git": true,
     "**/.DS_STORE": true,
@@ -35,6 +35,7 @@
     "**/node_modules": true,
     "**/.terraform": true
   },
+  "explorer.confirmDelete": false,
   // ==================================================
   // SEARCH
   // ==================================================
@@ -88,10 +89,33 @@
   // ==============================
   "editor.fontFamily": "'JetBrainsMono Nerd Font', 'Fira Code', monospace",
   "editor.fontLigatures": true,
-  "editor.fontSize": 13,
+  "editor.fontSize": 14,
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
   "terminal.integrated.defaultProfile.linux": "zsh",
   "terminal.integrated.scrollBack": 10000,
   // MISCELLANOUS
-  "chat.disableAIFeatures": true
+  "chat.disableAIFeatures": true,
+  "workbench.layoutControl.enabled": false,
+  // Go-specific
+  "go.useLanguageServer": true, // use gopls
+  "gopls": {
+    "ui.semanticTokens": true, // Better syntax highlighting
+    "formatting.gofumpt": true, // Use stricter gofumpt formatting
+    "analysis": {
+      "unusedparams": true
+    }
+  },
+  // Editor behavior for Go files
+  "[go]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "golang.go",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true,
+      "source.fixAll": true
+    }
+  },
+  "[go.mod]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "golang.go"
+  }
 }
